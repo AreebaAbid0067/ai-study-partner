@@ -5,12 +5,15 @@ app = FastAPI(title="AI Study Partner API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:8501"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/health")
-def health_check():
+@app.get("/checkin")
+async def health_check():
     return {"status": "ok"}
+
+
+
