@@ -3,3 +3,5 @@ uvicorn
 streamlit
 python-dotenv
 pydantic
+pydantic-settings
+sqlalchemy
